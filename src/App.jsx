@@ -5,6 +5,7 @@ import data from "./data/data";
 
 export default function App() {
   const { learning, failure, habits, success } = { ...data.principles };
+  const { placeholder } = { ...data };
   const [isDark, setIsDark] = useState(true);
   const [activeSection, setActiveSection] = useState("");
   const sectionsRef = useRef([]);
@@ -835,7 +836,7 @@ export default function App() {
                     description:
                       "A subscription-based web platform that helps physiotherapists manage their brand, clients, and appointments — all in one place.",
                     tech: ["Next.js", "Stripe", "Tailwind", "AWS"],
-                    image: "/placeholder.svg",
+                    image: placeholder,
                   },
                   {
                     title: "Athlete Performance Hub",
@@ -843,7 +844,7 @@ export default function App() {
                     description:
                       "A platform built for professional athletes to showcase achievements, connect with sponsors, and track personal progress.",
                     tech: ["React", "Node.js", "MongoDB", "AWS"],
-                    image: "/placeholder.svg",
+                    image: placeholder,
                   },
                   {
                     title: "NUR Running Club",
@@ -851,7 +852,7 @@ export default function App() {
                     description:
                       "A clean and functional site for my local running community — focused on consistency, growth, and the love for movement.",
                     tech: ["Vite", "React", "Tailwind"],
-                    image: "/placeholder.svg",
+                    image: placeholder,
                   },
                   {
                     title: "Personal Branding Toolkit",
@@ -859,7 +860,7 @@ export default function App() {
                     description:
                       "A toolkit for creators to launch personal websites and portfolios with structure, design, and performance out of the box.",
                     tech: ["Next.js", "TypeScript", "Framer Motion"],
-                    image: "/placeholder.svg",
+                    image: placeholder,
                   },
                 ].map((project, index) => (
                   <article

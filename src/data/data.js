@@ -7,6 +7,7 @@ const data = {
     habits: `${BASEURL}/habits.svg`,
     success: `${BASEURL}/success.svg`,
   },
+  placeholder: `${BASEURL}/placeholder.svg`,
 };
 
 export default data;
