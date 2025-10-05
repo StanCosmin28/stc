@@ -1,7 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import BubbleMenu from "./components/BubbleMenu";
 
+import data from "./data/data";
+
 export default function App() {
+  const { learning, failure, habits, success } = { ...data.principles };
   const [isDark, setIsDark] = useState(true);
   const [activeSection, setActiveSection] = useState("");
   const sectionsRef = useRef([]);
@@ -416,7 +419,7 @@ export default function App() {
                         className={`opacity-50 group-hover:opacity-100 transition-all duration-400 ${
                           !isDark ? "principles-filter opacity-75" : ""
                         }`}
-                        src="/learn.svg"
+                        src={learning}
                         alt=""
                       />
                     ),
@@ -430,7 +433,7 @@ export default function App() {
                         className={`opacity-50 group-hover:opacity-100 transition-all duration-400 ${
                           !isDark ? "principles-filter opacity-75" : ""
                         }`}
-                        src="/failure.svg"
+                        src={failure}
                         alt=""
                       />
                     ),
@@ -444,7 +447,7 @@ export default function App() {
                         className={`opacity-50 group-hover:opacity-100 transition-all duration-400 ${
                           !isDark ? "principles-filter opacity-75" : ""
                         }`}
-                        src="/habits.svg"
+                        src={habits}
                         alt=""
                       />
                     ),
@@ -458,7 +461,7 @@ export default function App() {
                         className={`opacity-50 group-hover:opacity-100 transition-all duration-400 ${
                           !isDark ? "principles-filter opacity-75" : ""
                         }`}
-                        src="/success.svg"
+                        src={success}
                         alt=""
                       />
                     ),
@@ -486,7 +489,7 @@ export default function App() {
           <section
             id="softskills"
             ref={(el) => (sectionsRef.current[3] = el)}
-            className="min-h-screen py-20 sm:py-32 opacity-0"
+            className="min-h-screen py-20 sm:py-32"
           >
             <div className="space-y-12 sm:space-y-16">
               {/* Section Header */}
