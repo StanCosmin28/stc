@@ -4,7 +4,7 @@ import BubbleMenu from "./components/BubbleMenu";
 import data from "./data/data";
 
 export default function App() {
-  const { learning, failure, habits, success } = { ...data.principles };
+  const { learn, failure, habits, success } = { ...data.principles };
   const { placeholder } = { ...data };
   const [isDark, setIsDark] = useState(true);
   const [activeSection, setActiveSection] = useState("");
@@ -420,7 +420,7 @@ export default function App() {
                         className={`opacity-50 group-hover:opacity-100 transition-all duration-400 ${
                           !isDark ? "principles-filter opacity-75" : ""
                         }`}
-                        src={learning}
+                        src={learn}
                         alt=""
                       />
                     ),
