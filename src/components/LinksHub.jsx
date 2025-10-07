@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   Github,
   Linkedin,
@@ -108,7 +108,7 @@ export default function LinksHub() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light mb-4 tracking-tight">
-            Your Name
+            Stan Cosmin
           </h1>
           <p className="text-gray-400 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
             Full-stack developer & creative builder
@@ -174,7 +174,7 @@ export default function LinksHub() {
         </div>
 
         {/* Current Status Section */}
-        <div
+        {/* <div
           className={`mb-16 transition-all duration-1000 delay-700 ${
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
@@ -207,10 +207,10 @@ export default function LinksHub() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Quick Contact Section */}
-        <div
+        {/* <div
           className={`mb-16 transition-all duration-1000 delay-900 ${
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
@@ -229,10 +229,10 @@ export default function LinksHub() {
               <ExternalLink className="w-4 h-4" />
             </a>
           </div>
-        </div>
+        </div> */}
 
         {/* Latest Content/Blog Section */}
-        <div
+        {/* <div
           className={`mb-16 transition-all duration-1000 delay-1000 ${
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
@@ -279,7 +279,7 @@ export default function LinksHub() {
               </a>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Skills & Tech Stack Section */}
         <div
@@ -494,7 +494,7 @@ export default function LinksHub() {
         </div>
 
         {/* Timeline / Journey Section */}
-        <div
+        {/* <div
           className={`mb-16 transition-all duration-1000 delay-1400 ${
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
@@ -555,10 +555,10 @@ export default function LinksHub() {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Newsletter Subscription Section */}
-        <div
+        {/* <div
           className={`mb-12 transition-all duration-1000 delay-1500 ${
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
@@ -588,7 +588,7 @@ export default function LinksHub() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Footer */}
         <div
@@ -596,7 +596,7 @@ export default function LinksHub() {
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <p>© 2024 · Built with discipline & passion</p>
+          <p>© 2025 · Built with discipline & passion</p>
         </div>
       </div>
     </div>
