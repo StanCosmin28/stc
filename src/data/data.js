@@ -8,6 +8,7 @@ const data = {
     success: `${BASEURL}/success.svg`,
   },
   placeholder: `${BASEURL}/placeholder.svg`,
+  profile: `${BASEURL}/profile-me.png`,
 };
 
 export default data;

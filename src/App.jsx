@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import BubbleMenu from "./components/BubbleMenu";
 
 import data from "./data/data";
+import LinksHub from "./components/LinksHub";
 
 export default function App() {
   const { learn, failure, habits, success } = { ...data.principles };
@@ -77,6 +78,7 @@ export default function App() {
   ];
   return (
     <>
+      {/* <LinksHub /> */}
       <BubbleMenu
         // logo={<span style={{ fontWeight: 700 }}>stanc.dev</span>}
         logo={
