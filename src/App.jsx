@@ -78,7 +78,7 @@ export default function App() {
   ];
   return (
     <>
-      {/* <LinksHub /> */}
+      <LinksHub />
       <BubbleMenu
         // logo={<span style={{ fontWeight: 700 }}>stanc.dev</span>}
         logo={
