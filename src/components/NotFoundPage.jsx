@@ -18,13 +18,13 @@ export default function NotFoundPage() {
   }, []);
 
   const quickLinks = [
-    { name: "Home", icon: <Home className="w-4 h-4" />, url: "/stc/" },
+    { name: "Home", icon: <Home className="w-4 h-4" />, url: "/" },
     {
       name: "Projects",
       icon: <Code className="w-4 h-4" />,
-      url: "/stc/links",
+      url: "/links",
     },
-    { name: "Links", icon: <Search className="w-4 h-4" />, url: "/stc/links" },
+    { name: "Links", icon: <Search className="w-4 h-4" />, url: "/links" },
   ];
 
   return (

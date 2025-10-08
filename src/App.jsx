@@ -80,7 +80,7 @@ export default function App() {
   return (
     <Routes>
       <Route
-        path="stc/links"
+        path="/links"
         element={
           <>
             {" "}
@@ -109,7 +109,7 @@ export default function App() {
         }
       />
       <Route
-        path="/stc"
+        path="/"
         element={
           <div className="min-h-screen bg-background text-foreground relative">
             <nav className="fixed left-8 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
