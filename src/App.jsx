@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import BubbleMenu from "./components/BubbleMenu";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import data from "./data/data";
 import LinksHub from "./components/LinksHub";
 import NotFoundPage from "./components/NotFoundPage";
+import { ArrowRight } from "lucide-react";
 
 export default function App() {
   const { learn, failure, habits, success } = { ...data.principles };
@@ -192,6 +193,24 @@ export default function App() {
                         </div>
                         <div>Europe, Romania 🇷🇴</div>
                       </div>
+                      <a href="/links">
+                        <div className="group flex flex-row items-center gap-2 mt-4 cursor-pointer opacity-45 hover:opacity-75 transition-opacity duration-300">
+                          <span className="text-md">go see my links</span>
+                          <svg
+                            className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M17 8l4 4m0 0l-4 4m4-4H3"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
                     </div>
                   </div>
 

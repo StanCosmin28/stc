@@ -113,6 +113,24 @@ export default function LinksHub() {
           <p className="text-gray-400 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
             Full-stack developer & creative builder
           </p>
+          <a href="/">
+            <div className="group flex flex-row justify-center items-center gap-2 mt-4 cursor-pointer opacity-45 hover:opacity-75 transition-opacity duration-300">
+              <span className="text-md">go see my website</span>
+              <svg
+                className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                ></path>
+              </svg>
+            </div>
+          </a>
         </div>
 
         {/* Links Grid */}
