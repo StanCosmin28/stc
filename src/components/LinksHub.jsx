@@ -229,7 +229,7 @@ export default function LinksHub() {
         </div> */}
 
         {/* Quick Contact Section */}
-        {/* <div
+        <div
           className={`mb-16 transition-all duration-1000 delay-900 ${
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
@@ -248,7 +248,7 @@ export default function LinksHub() {
               <ExternalLink className="w-4 h-4" />
             </a>
           </div>
-        </div> */}
+        </div>
 
         {/* Latest Content/Blog Section */}
         {/* <div
@@ -310,18 +310,24 @@ export default function LinksHub() {
             Tech Stack & Skills
           </h2>
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 sm:p-8">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            {/* Frontend & Backend side by side */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8">
               <div>
                 <h3 className="text-lg font-medium mb-4 text-gray-300">
                   Frontend
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {[
-                    "React",
+                    "JavaScript",
                     "TypeScript",
-                    "Tailwind CSS",
-                    "Next.js",
+                    "React",
+                    "Angular",
+                    "Ionic",
                     "Vite",
+                    "Tailwind CSS",
+                    "HTML",
+                    "SCSS",
+                    "CSS",
                   ].map((tech, i) => (
                     <span
                       key={i}
@@ -332,43 +338,86 @@ export default function LinksHub() {
                   ))}
                 </div>
               </div>
+
               <div>
                 <h3 className="text-lg font-medium mb-4 text-gray-300">
-                  Backend & Tools
+                  Backend
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {["Node.js", "Express", "MongoDB", "PostgreSQL", "Git"].map(
-                    (tech, i) => (
-                      <span
-                        key={i}
-                        className="px-3 py-1.5 text-sm bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg text-white hover:border-green-500/50 transition-all duration-300 cursor-default"
-                      >
-                        {tech}
-                      </span>
-                    )
-                  )}
+                  {[
+                    "Node.js",
+                    "Express.js",
+                    "Nest.js",
+                    "MongoDB",
+                    "PostgreSQL",
+                    "SQL",
+                  ].map((tech, i) => (
+                    <span
+                      key={i}
+                      className="px-3 py-1.5 text-sm bg-gradient-to-r from-green-500/20 to-teal-500/20 border border-green-500/30 rounded-lg text-white hover:border-green-500/50 transition-all duration-300 cursor-default"
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
-            <div className="mt-8 pt-6 border-t border-white/10">
-              <h3 className="text-lg font-medium mb-4 text-gray-300">
-                Soft Skills
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {[
-                  "Problem Solving",
-                  "Team Leadership",
-                  "Agile",
-                  "Discipline",
-                  "Fast Learner",
-                ].map((skill, i) => (
-                  <span
-                    key={i}
-                    className="px-3 py-1.5 text-sm bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-lg text-white hover:border-purple-500/50 transition-all duration-300 cursor-default"
-                  >
-                    {skill}
-                  </span>
-                ))}
+
+            {/* Soft Skills & Tools side by side at the bottom */}
+            <div className="pt-6 border-t border-white/10">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-lg font-medium mb-4 text-gray-300">
+                    Soft Skills
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      "Problem Solving",
+                      "Discipline",
+                      "Consistency",
+                      "Communication",
+                      "Creativity",
+                      "Adaptability",
+                      "Team Leadership",
+                      "Agile",
+                    ].map((skill, i) => (
+                      <span
+                        key={i}
+                        className="px-3 py-1.5 text-sm bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-lg text-white hover:border-purple-500/50 transition-all duration-300 cursor-default"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-lg font-medium mb-4 text-gray-300">
+                    Tools & Others
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      "Git",
+                      "GitHub",
+                      "Postman",
+                      "Ionic",
+                      "AWS",
+                      "Capacitor",
+                      "Android Studio",
+                      "Xcode",
+                      "Figma",
+                      "Illustrator",
+                      "Photoshop",
+                    ].map((tool, i) => (
+                      <span
+                        key={i}
+                        className="px-3 py-1.5 text-sm bg-gradient-to-r from-orange-500/20 to-amber-500/20 border border-orange-500/30 rounded-lg text-white hover:border-orange-500/50 transition-all duration-300 cursor-default"
+                      >
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
