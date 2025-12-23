@@ -98,9 +98,10 @@ export default function LinksHub() {
           }`}
         >
           <div className="relative inline-block mb-6">
-            <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-full overflow-hidden border border-white/10">
+            <div className="w-22 h-32 sm:w-36 sm:h-36 rounded-full overflow-hidden border border-white/10">
               <img
-                src={profile}
+                // src={profile}
+                src="me_profile.png"
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
