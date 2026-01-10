@@ -111,12 +111,13 @@ export default function LinksHub() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light mb-4 tracking-tight">
             Stan Cosmin
           </h1>
-          <p className="text-gray-400 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
-            Full-stack developer & creative builder
+          <p className="text-gray-400 text-lg sm:text-xl max-w-2xl mx-auto ">
+            {/* Full-stack developer & creative builder */}I create systems
+            between tech, <br /> business, and life.
           </p>
           <a href="/">
             <div className="group flex flex-row justify-center items-center gap-2 mt-4 cursor-pointer opacity-45 hover:opacity-75 transition-opacity duration-300">
-              <span className="text-md">go see my website</span>
+              <span className="text-md">know me better</span>
               <svg
                 className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
                 fill="none"
