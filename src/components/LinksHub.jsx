@@ -109,7 +109,7 @@ export default function LinksHub() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light mb-4 tracking-tight">
-            Stan Cosmin
+            Stan Cosmin!
           </h1>
           <p className="text-gray-400 text-lg sm:text-xl max-w-2xl mx-auto ">
             {/* Full-stack developer & creative builder */}I create systems
